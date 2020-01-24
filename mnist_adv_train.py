@@ -57,7 +57,7 @@ loader_test = torch.utils.data.DataLoader(test_dataset,
 net = LeNet5()
 
 if torch.cuda.is_available():
-    print('CUDA ensabled.')
+    print('CUDA enabled.')
     net.cuda()
 net.train()
 
@@ -86,7 +86,7 @@ for epoch in range(param['num_epochs']):
             loss_adv = criterion(net(x_adv_var), y_var)
             loss = (loss + loss_adv) / 2
 
-        if (t + 1) % 100 == 0:
+        if (t + 1) % 10 == 0:
             print('t = %d, loss = %.8f' % (t + 1, loss))
 
         optimizer.zero_grad()
