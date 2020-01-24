@@ -23,9 +23,11 @@ param = {
 }
 
 
-OMNIGLOT_TRAIN = '/Users/augustinecha/dataset/omniglot_classification/images/train'
-OMNIGLOT_TEST = '/Users/augustinecha/dataset/omniglot_classification/images/test'
+# OMNIGLOT_TRAIN = '/Users/augustinecha/dataset/omniglot_classification/images/train'
+# OMNIGLOT_TEST = '/Users/augustinecha/dataset/omniglot_classification/images/test'
 
+OMNIGLOT_TRAIN = '/content/gdrive/My Drive/proj/dataset/omniglot_classification/images/train'
+OMNIGLOT_TEST = '/content/gdrive/My Drive/proj/dataset/omniglot_classification/images/test'
 
 # Data loaders
 # test_dataset = datasets.MNIST(root='../data/', train=False, download=True,

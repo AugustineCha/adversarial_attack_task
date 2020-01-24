@@ -20,14 +20,17 @@ from models import LeNet5
 param = {
     'batch_size': 128,
     'test_batch_size': 100,
-    'num_epochs': 3,
+    'num_epochs': 15,
     'delay': 10,
     'learning_rate': 1e-3,
     'weight_decay': 5e-4,
 }
 
-OMNIGLOT_TRAIN = '/Users/augustinecha/dataset/omniglot_classification/images/train'
-OMNIGLOT_TEST = '/Users/augustinecha/dataset/omniglot_classification/images/test'
+# OMNIGLOT_TRAIN = '/Users/augustinecha/dataset/omniglot_classification/images/train'
+# OMNIGLOT_TEST = '/Users/augustinecha/dataset/omniglot_classification/images/test'
+
+OMNIGLOT_TRAIN = '/content/gdrive/My Drive/proj/dataset/omniglot_classification/images/train'
+OMNIGLOT_TEST = '/content/gdrive/My Drive/proj/dataset/omniglot_classification/images/test'
 
 # Data loaders
 # train_dataset = datasets.MNIST(root='../data/',train=True, download=True, 
