@@ -18,8 +18,8 @@ from models import LeNet5
 
 # Hyper-parameters
 param = {
-    'batch_size': 128,
-    'test_batch_size': 100,
+    'batch_size': 16,
+    'test_batch_size': 10,
     'num_epochs': 15,
     'delay': 10,
     'learning_rate': 1e-3,
