@@ -40,7 +40,7 @@ class LeNet7(nn.Module):
         self.relu4 = nn.ReLU(inplace=True)
         self.maxpool4 = nn.MaxPool2d(2)
         self.linear1 = nn.Linear(6*6*128, 1000)
-        self.relu3 = nn.ReLU(inplace=True)
+        self.relu5 = nn.ReLU(inplace=True)
         self.linear2 = nn.Linear(1000, 500)
 
     def forward(self, x):
@@ -49,7 +49,7 @@ class LeNet7(nn.Module):
         out = self.maxpool3(self.relu3(self.conv3(out)))
         out = self.maxpool4(self.relu4(self.conv4(out)))
         out = out.view(out.size(0), -1)
-        out = self.relu3(self.linear1(out))
+        out = self.relu5(self.linear1(out))
         out = self.linear2(out)
         return out
 
