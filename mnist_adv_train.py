@@ -54,7 +54,8 @@ loader_test = torch.utils.data.DataLoader(test_dataset,
     batch_size=param['test_batch_size'], shuffle=True)
 
 # Setup the model
-net = LeNet5()
+# net = LeNet5()
+net = LeNet7()
 
 if torch.cuda.is_available():
     print('CUDA enabled.')
@@ -96,4 +97,5 @@ for epoch in range(param['num_epochs']):
 
 test(net, loader_test)
 
-torch.save(net.state_dict(), 'models/adv_trained_lenet5.pkl')
+# torch.save(net.state_dict(), 'models/adv_trained_lenet5.pkl')
+torch.save(net.state_dict(), 'models/adv_trained_lenet7.pkl')
