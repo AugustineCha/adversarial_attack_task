@@ -26,7 +26,7 @@ class LeNet5(nn.Module):
 
 class LeNet7(nn.Module):
     def __init__(self):
-        super(LeNet5, self).__init__()
+        super(LeNet7, self).__init__()
         self.conv1 = nn.Conv2d(3, 32, kernel_size=3, padding=1, stride=1)
         self.relu1 = nn.ReLU(inplace=True)
         self.maxpool1 = nn.MaxPool2d(2)
